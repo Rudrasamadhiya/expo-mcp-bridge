@@ -9,7 +9,6 @@
 
 <p align="center">
   <a href="https://www.npmjs.com/package/expo-mcp-bridge"><img alt="npm version" src="https://img.shields.io/npm/v/expo-mcp-bridge?style=flat-square&labelColor=0b0b0b&color=ff2da8"></a>
-  <a href="https://www.npmjs.com/package/expo-mcp-bridge"><img alt="npm downloads" src="https://img.shields.io/npm/dm/expo-mcp-bridge?style=flat-square&labelColor=0b0b0b&color=d4ff3f"></a>
   <a href="https://github.com/Rudrasamadhiya/expo-mcp-bridge/actions/workflows/ci.yml"><img alt="CI" src="https://img.shields.io/github/actions/workflow/status/Rudrasamadhiya/expo-mcp-bridge/ci.yml?branch=main&style=flat-square&labelColor=0b0b0b&label=CI"></a>
   <a href="https://www.npmjs.com/package/expo-mcp-bridge"><img alt="node" src="https://img.shields.io/node/v/expo-mcp-bridge?style=flat-square&labelColor=0b0b0b&color=cbb3e8"></a>
   <a href="LICENSE"><img alt="MIT license" src="https://img.shields.io/npm/l/expo-mcp-bridge?style=flat-square&labelColor=0b0b0b&color=e34234"></a>
