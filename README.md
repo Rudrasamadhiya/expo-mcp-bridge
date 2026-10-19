@@ -100,6 +100,19 @@ On **Windows**: `"command": "cmd", "args": ["/c", "npx", "expo-mcp-bridge"]`.
 | `app_reload` | Reload the JS bundle (tells you honestly if it can't) |
 | `device_key` | `volume_up`, `volume_down`, `mute`, `back`, `home`, `power`… (Android via adb) |
 
+## 💻 CLI
+```bash
+npx expo-mcp-bridge init            # in your Expo project: .mcp.json + agent skill + AGENTS.md section
+npx expo-mcp-bridge init --cursor   # also write .cursor/mcp.json
+npx expo-mcp-bridge                 # run the MCP server (your agent starts this from .mcp.json)
+npx expo-mcp-bridge --help
+```
+| Environment variable | Default | What |
+|---|---|---|
+| `EXPO_MCP_PORT` | `8347` | WebSocket port the phone connects to (match `<AgentBridge port>`) |
+
+You normally never run the server yourself — the agent launches it over stdio. To try it by hand, any MCP client works, e.g. `npx @modelcontextprotocol/inspector npx expo-mcp-bridge`.
+
 ## ⚙️ Props
 ```tsx
 <AgentBridge

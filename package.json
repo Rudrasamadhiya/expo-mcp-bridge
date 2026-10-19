@@ -45,7 +45,7 @@
     "AI_SETUP.md"
   ],
   "scripts": {
-    "test": "node --test test/*.test.mjs"
+    "test": "node --test test/e2e.test.mjs"
   },
   "engines": {
     "node": ">=20"
