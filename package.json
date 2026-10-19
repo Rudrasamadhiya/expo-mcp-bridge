@@ -1,0 +1,76 @@
+{
+  "name": "expo-mcp-bridge",
+  "version": "0.3.0",
+  "description": "Let AI agents (Claude Code, Cursor, Antigravity) see and drive your Expo / React Native app on a real phone: snapshot, tap, type, scroll, screenshots, logs and network over MCP.",
+  "keywords": [
+    "expo",
+    "react-native",
+    "mcp",
+    "model-context-protocol",
+    "ai",
+    "agent",
+    "claude",
+    "testing",
+    "expo-go",
+    "automation",
+    "antigravity",
+    "cursor",
+    "claude-code",
+    "react-native-testing",
+    "ai-agent"
+  ],
+  "license": "MIT",
+  "author": "Rudra Samadhiya",
+  "homepage": "https://github.com/Rudrasamadhiya/expo-mcp-bridge#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rudrasamadhiya/expo-mcp-bridge.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Rudrasamadhiya/expo-mcp-bridge/issues"
+  },
+  "main": "client/index.js",
+  "react-native": "client/index.js",
+  "types": "client/index.d.ts",
+  "bin": {
+    "expo-mcp-bridge": "server/cli.mjs"
+  },
+  "files": [
+    "client",
+    "server",
+    "skill",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md",
+    "AI_SETUP.md"
+  ],
+  "scripts": {
+    "test": "node --test test/*.test.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.1",
+    "ws": "^8.22.0",
+    "zod": "^4.6.7"
+  },
+  "peerDependencies": {
+    "expo-constants": "*",
+    "react": "*",
+    "react-native": "*",
+    "react-native-view-shot": "*"
+  },
+  "peerDependenciesMeta": {
+    "expo-constants": {
+      "optional": true
+    },
+    "react-native-view-shot": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "react": "^19.1.0",
+    "react-test-renderer": "^19.1.0"
+  }
+}
