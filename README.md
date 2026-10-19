@@ -3,8 +3,11 @@
 [![npm](https://img.shields.io/npm/v/expo-mcp-bridge)](https://www.npmjs.com/package/expo-mcp-bridge)
 [![CI](https://github.com/Rudrasamadhiya/expo-mcp-bridge/actions/workflows/ci.yml/badge.svg)](https://github.com/Rudrasamadhiya/expo-mcp-bridge/actions/workflows/ci.yml)
 [![license](https://img.shields.io/npm/l/expo-mcp-bridge)](LICENSE)
+[![docs](https://img.shields.io/badge/docs-website-6d5cff)](https://rudrasamadhiya.github.io/expo-agent-kit/docs/bridge/)
 
 **Let your AI agent use your phone app the way it uses a browser.**
+
+📖 **Website & full docs:** [rudrasamadhiya.github.io/expo-agent-kit/docs/bridge/](https://rudrasamadhiya.github.io/expo-agent-kit/docs/bridge/)
 
 Claude Code, Antigravity, Cursor and any other [MCP](https://modelcontextprotocol.io) agent can **read the screen, tap, type and fill forms, scroll, take screenshots, read console errors and network requests, and press volume / back / home** in your Expo / React Native app, running live in **Expo Go on your real phone**. No more pasting screenshots into the chat.
 
