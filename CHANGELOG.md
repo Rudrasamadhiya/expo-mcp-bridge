@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.3.1
+
+- Docs and package page: new README with banner, grouped tool tables and component API table; homepage now points to the documentation site.
+- No code changes.
+
 ## 0.3.0
 
 - In-app screen recorder (`record` command): timed frames, smooth scrolling, a tap mid-recording, page loads recorded live; React Native `<Modal>`s captured as transparent overlays. Used by expo-launch-video.

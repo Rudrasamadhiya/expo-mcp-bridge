@@ -1,6 +1,6 @@
 {
   "name": "expo-mcp-bridge",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "Let AI agents (Claude Code, Cursor, Antigravity) see and drive your Expo / React Native app on a real phone: snapshot, tap, type, scroll, screenshots, logs and network over MCP.",
   "keywords": [
     "expo",
@@ -17,7 +17,12 @@
     "cursor",
     "claude-code",
     "react-native-testing",
-    "ai-agent"
+    "ai-agent",
+    "mcp-server",
+    "mobile-testing",
+    "e2e-testing",
+    "ios",
+    "android"
   ],
   "license": "MIT",
   "author": "Rudra Samadhiya",
