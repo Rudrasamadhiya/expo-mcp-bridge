@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.3.2
+
+- Listed in the official MCP Registry as `io.github.Rudrasamadhiya/expo-mcp-bridge` (adds `mcpName` to package.json and a `server.json`).
+- No code changes.
+
 ## 0.3.1
 
 - Docs and package page: new README with banner, grouped tool tables and component API table; homepage now points to the documentation site.

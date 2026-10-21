@@ -1,0 +1,31 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.Rudrasamadhiya/expo-mcp-bridge",
+  "title": "Expo Agent Bridge",
+  "description": "Let AI agents see, tap, type, scroll, screenshot and debug your Expo app on a real phone.",
+  "repository": {
+    "url": "https://github.com/Rudrasamadhiya/expo-mcp-bridge",
+    "source": "github"
+  },
+  "websiteUrl": "https://rudrasamadhiya.github.io/expo-agent-kit/docs/bridge/",
+  "version": "0.3.2",
+  "packages": [
+    {
+      "registryType": "npm",
+      "registryBaseUrl": "https://registry.npmjs.org",
+      "identifier": "expo-mcp-bridge",
+      "version": "0.3.2",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "EXPO_MCP_PORT",
+          "description": "WebSocket port the phone connects to (default 8347)",
+          "isRequired": false,
+          "format": "number"
+        }
+      ]
+    }
+  ]
+}
