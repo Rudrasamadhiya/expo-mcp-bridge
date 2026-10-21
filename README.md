@@ -48,6 +48,7 @@ export default function RootLayout() {
 - [Quick start](#quick-start)
 - [Features](#features)
 - [What the agent sees](#what-the-agent-sees)
+- [Common questions](#common-questions)
 - [Connecting your agent](#connecting-your-agent)
 - [Tools](#tools)
 - [Component API](#component-api)
@@ -118,6 +119,32 @@ Changes (+ added, - removed):
 + button "icon:eye-off" [e9]
 - button "icon:eye" [e5]
 ```
+
+## Common questions
+
+### How do I let Claude Code, Cursor or Antigravity see my Expo app?
+
+Install this package, run `npx expo-mcp-bridge init`, and mount `<AgentBridge />` in your root layout. Your agent then gets MCP tools such as `app_snapshot` (read the visible screen), `app_tap`, `app_type` and `app_screenshot`, and works directly against the app running on your phone.
+
+### My AI agent keeps asking me for screenshots of my React Native app. How do I stop that?
+
+That is exactly what this package replaces. Instead of you taking screenshots and pasting them into the chat, the agent calls `app_snapshot` itself and receives a compact outline of the screen (about 70 tokens instead of about 1,000 for an image), or `app_screenshot` when it really needs pixels.
+
+### Can an AI agent test my React Native app on a real phone?
+
+Yes. The agent taps, types, scrolls and navigates through your real handlers, reads new JS errors and failed network requests after every action, and reports what broke. It works in Expo Go or a dev build, on iPhone and Android, over Wi-Fi.
+
+### Does it work with Expo Go?
+
+Yes. Both the bridge and its screenshot dependency (`react-native-view-shot`) run in Expo Go. No native code, no config plugin and no rebuild are needed.
+
+### How is this different from Detox, Maestro or Appium?
+
+Those are end-to-end test frameworks: you write test scripts or flows and run them in CI. expo-mcp-bridge is for development with an AI agent: the agent explores and drives the live app interactively and fixes the code in the same session. It needs no native setup and reads the React tree directly, so it complements a test framework rather than replacing one.
+
+### Is it safe to leave in my app?
+
+`<AgentBridge />` only runs in development (`__DEV__`) and only connects to your own computer. In production builds it renders its children and nothing else.
 
 ## Connecting your agent
 
